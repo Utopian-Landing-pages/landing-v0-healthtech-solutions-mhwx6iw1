@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTech Solutions - Revolutionizing Healthcare Technology</title>
+    <meta name="description" content="Leading healthcare technology solutions that transform patient care and streamline medical operations. Discover our innovative platform today.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="HealthTech Solutions - Revolutionizing Healthcare Technology">
+    <meta property="og:description" content="Leading healthcare technology solutions that transform patient care and streamline medical operations.">
+    <meta property="og:image" content="https://source.unsplash.com/1200x630/medical,technology">
+    <meta property="og:url" content="https://healthtech-solutions.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Vercel Analytics -->
+    <script defer src="https://cdn.vercel-analytics.com/v1/script.js"></script>
+    <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "HealthTech Solutions",
+        "description": "Leading healthcare technology solutions",
+        "url": "https://healthtech-solutions.com",
+        "logo": "https://source.unsplash.com/200x200/medical,logo"
+    }
+    </script>
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #ff1404 0%, #ff0472 50%, #ff9204 100%); }
+        .text-gradient { background: linear-gradient(135deg, #ff1404, #ff0472, #ff9204); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; }
+        .animate-slide-up { animation: slideUp 0.8s ease-out forwards; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .counter { transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-lg z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="https://source.unsplash.com/40x40/medical,logo" alt="HealthTech Solutions" class="h-10 w-10 rounded-lg">
+                    <span class="ml-3 text-xl font-bold text-gradient">HealthTech Solutions</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link text-gray-700 hover:text-[#ff1404] px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="#features" class="nav-link text-gray-700 hover:text-[#ff1404] px-3 py-2 text-sm font-medium transition-colors">Features</a>
+                        <a href="#about" class="nav-link text-gray-700 hover:text-[#ff1404] px-3 py-2 text-sm font-medium transition-colors">About</a>
+                        <a href="#pricing" class="nav-link text-gray-700 hover:text-[#ff1404] px-3 py-2 text-sm font-medium transition-colors">Pricing</a>
+                        <a href="#testimonials" class="nav-link text-gray-700 hover:text-[#ff1404] px-3 py-2 text-sm font-medium transition-colors">Testimonials</a>
+                        <a href="#faq" class="nav-link text-gray-700 hover:text-[#ff1404] px-3 py-2 text-sm font-medium transition-colors">FAQ</a>
+                        <a href="#contact" class="nav-link text-gray-700 hover:text-[#ff1404] px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="hidden md:block">
+                    <a href="#contact" class="bg-[#ff1404] hover:bg-[#ff0472] text-white px-6 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105">Get Started</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-[#ff1404] focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-[#ff1404] font-medium">Home</a>
+                <a href="#features" class="block px-3 py-2 text-gray-700 hover:text-[#ff1404] font-medium">Features</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-[#ff1404] font-medium">About</a>
+                <a href="#pricing" class="block px-3 py-2 text-gray-700 hover:text-[#ff1404] font-medium">Pricing</a>
+                <a href="#testimonials" class="block px-3 py-2 text-gray-700 hover:text-[#ff1404] font-medium">Testimonials</a>
+                <a href="#faq" class="block px-3 py-2 text-gray-700 hover:text-[#ff1404] font-medium">FAQ</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-[#ff1404] font-medium">Contact</a>
+                <a href="#contact" class="block mx-3 mt-4 bg-[#ff1404] text-white px-4 py-2 rounded-lg font-medium text-center">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-16 min-h-screen flex items-center gradient-bg relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white animate-fade-in">
+                    <h1 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+                        Revolutionizing <span class="text-[#ff9204]">Healthcare</span> Technology
+                    </h1>
+                    <p class="text-xl lg:text-2xl mb-8 text-white/90 leading-relaxed">
+                        Transform patient care with our cutting-edge AI-powered healthcare solutions. Streamline operations, improve outcomes, and reduce costs.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" data-project-link class="bg-white text-[#ff1404] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 text-center">
+                            Start Free Trial
+                        </a>
+                        <a href="#features" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-[#ff1404] transition-all duration-300 text-center">
+                            Learn More
+                        </a>
+                    </div>
+                    <div class="mt-12 flex items-center space-x-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold counter" data-target="10000">0</div>
+                            <div class="text-white/80">Patients Served</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold counter" data-target="500">0</div>
+                            <div class="text-white/80">Healthcare Partners</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold counter" data-target="99">0</div>
+                            <div class="text-white/80">% Uptime</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-slide-up">
+                    <img src="https://source.unsplash.com/800x600/medical,technology,doctor" alt="Healthcare Technology" class="rounded-2xl shadow-2xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gradient">Powerful Features</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our comprehensive healthcare technology platform offers everything you need to modernize your practice and improve patient outcomes.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gradient-to-r from-[#ff1404] to-[#ff0472] rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">AI-Powered Diagnostics</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Advanced machine learning algorithms assist healthcare professionals in making accurate diagnoses faster than ever before.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gradient-to-r from-[#ff0472] to-[#ff9204] rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Patient Management</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Comprehensive patient records, appointment scheduling, and communication tools all in one integrated platform.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gradient-to-r from-[#ff9204] to-[#ff1404] rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 
